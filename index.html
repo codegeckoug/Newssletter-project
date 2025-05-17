@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="news-wrapper" id="news-wrapper">
+        <div class="news-item">
+          <div class="news-items">
+            <h1 class="news-header">Stay Updated!</h1>
+            <p class="news-des">
+              Join 60,000+ product managers recieving monthly updates on:
+            </p>
+            <p class="news-list">
+              <img src="img/icon-list.svg" />
+              <span>Product discovery and building what matters</span>
+            </p>
+            <p class="news-list">
+              <img src="img/icon-list.svg" />
+              <span>Measuring to ensure update are a success</span>
+            </p>
+            <p class="news-list">
+              <img src="img/icon-list.svg" />
+              <span>And much more</span>
+            </p>
+          </div>
+          <div class="news-item">
+            <form id="news-form">
+              <label for="email adress">Email Address</label>
+              <input
+                type="email"
+                placeholder="email@company.com"
+                name="email"
+                required
+              />
+              <button type="submit" class="submit-btn" id="submit-btn">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="img/illustration-sign-up-desktop.svg" class="news-image" />
+        </div>
+      </div>
+
+      <div class="success-message">
+        <img
+          src="img/icon-success.svg"
+          alt="success"
+          style="margin-bottom: 20px"
+        />
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <strong>ash@loremcompany.com</strong>. Please open it and click the
+          button inside to confirm your subscription.
+        </p>
+        <button
+          onclick="location.reload()"
+          class="submit-btn"
+          style="margin-top: 40px"
+        >
+          Dismiss message
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #36384d;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; /* stays in a row always */
+  flex-wrap: wrap;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.news-wrapper {
+  display: flex;
+  flex-direction: row; /* keep row on all devices */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.news-header {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+.news-item {
+  color: #252942;
+  flex: 1 1 300px; /* grow/shrink and wrap if needed */
+  min-width: 280px;
+}
+.news-des {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.news-list {
+  margin-top: 5px;
+}
+.news-items {
+  display: flex;
+  flex-direction: column;
+  color: #252942;
+}
+.news-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #7e7e8c;
+}
+input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid gray;
+}
+.submit-btn {
+  background-color: #232742;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Responsive Tuning */
+@media (min-width: 319px) and (max-width: 480px) {
+  .news-header {
+    font-size: 1.5rem;
+  }
+
+  .news-des {
+    font-size: 0.95rem;
+  }
+
+  .news-list {
+    font-size: 0.9rem;
+  }
+
+  .news-image {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .news-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .news-item {
+    flex: unset;
+    width: 100%;
+  }
+
+  .news-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.success-message {
+  display: none;
+  text-align: center;
+}
